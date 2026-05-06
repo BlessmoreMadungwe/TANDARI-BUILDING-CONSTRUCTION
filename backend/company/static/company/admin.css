@@ -1,0 +1,157 @@
+/* Custom Django admin theme for Construction */
+
+body {
+  background: #edf2f8;
+  color: #233147;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#header, #user-tools, #branding, .module caption, .module th, .module td,
+.field-box, .submit-row, .form-row, .grp-module h2, .grp-module li, .breadcrumbs {
+  font-family: inherit;
+}
+
+#header {
+  background: linear-gradient(90deg, #1b365f 0%, #3e6bb7 100%);
+  border-bottom: 0;
+  box-shadow: 0 4px 18px rgba(17, 52, 91, 0.18);
+}
+
+#branding .logo {
+  display: none;
+}
+
+.branding-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.branding-wrapper a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.branding-wrapper span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+#user-tools a, #user-tools strong {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#user-tools a:hover {
+  color: #ffffff;
+}
+
+#content-main, .dashboard, .module, .app-list, .module caption, .object-tools, .changeform {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 16px 32px rgba(39, 66, 112, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+#content-main {
+  padding: 1.5rem;
+}
+
+#content h1, .module h2, .module caption,
+.grp-module h2,
+.changeform h1 {
+  color: #14213d;
+}
+
+#content-main .dashboard-module, .module, .changeform {
+  margin-bottom: 1.5rem;
+}
+
+#content-main .module caption {
+  color: #4b5563;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.module table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.module th {
+  background: #f8fafc;
+  color: #334155;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.module td, .module th {
+  padding: 0.95rem 0.75rem;
+}
+
+.module tr:hover td {
+  background: rgba(56, 189, 248, 0.08);
+}
+
+#content-main .submit-row {
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  padding-top: 1rem;
+}
+
+input, select, textarea, .vTextField, .vLargeTextField {
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.32);
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
+}
+
+button, input[type=submit], .button, .default {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.75rem 1.2rem;
+  font-weight: 600;
+}
+
+button:hover, input[type=submit]:hover, .button:hover, .default:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.sidebar, .app-list, .module .action-button {
+  border-radius: 18px;
+}
+
+.app-list li a {
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  color: #0f172a;
+}
+
+.app-list li a:hover {
+  background: rgba(59, 130, 246, 0.12);
+}
+
+#footer {
+  color: #64748b;
+}
+
+#content-main .inline-group {
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 1rem;
+}
+
+fieldset.module {
+  border: none;
+}

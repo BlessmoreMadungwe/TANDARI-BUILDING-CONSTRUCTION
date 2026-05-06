@@ -1,0 +1,17 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block title %}Construction Admin | {{ title }}{% endblock %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <link rel="stylesheet" type="text/css" href="{% static 'company/admin.css' %}">
+{% endblock %}
+
+{% block branding %}
+  <div class="branding-wrapper">
+    <a href="{% url 'admin:index' %}">
+      <span>Construction Admin</span>
+    </a>
+  </div>
+{% endblock %}
