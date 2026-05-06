@@ -18,7 +18,3 @@
   },
   "devDependencies": {}
 }
-
-"scripts": {
-  "build": "python3 backend/manage.py migrate && npm --prefix frontend run build"
-}
